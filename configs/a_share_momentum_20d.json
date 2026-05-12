@@ -1,0 +1,30 @@
+{
+  "symbol": "SAMPLE",
+  "market_data_csv": "../data/sample_prices.csv",
+  "starting_cash": 100000,
+  "strategy": {
+    "name": "momentum",
+    "target_weight": 0.5,
+    "lookback_window": 20,
+    "entry_return_pct": 0.06,
+    "exit_return_pct": -0.03
+  },
+  "risk": {
+    "allow_short": false,
+    "max_position_pct": 0.55,
+    "max_order_value": 25000,
+    "min_cash_buffer_pct": 0.08,
+    "max_daily_loss_pct": 0.03,
+    "stop_loss_pct": 0.08,
+    "take_profit_pct": 0.2,
+    "min_order_value": 1000,
+    "lot_size": 100
+  },
+  "execution": {
+    "broker": "paper",
+    "poll_seconds": 60,
+    "commission_bps": 2.5,
+    "slippage_bps": 5,
+    "min_fee": 5
+  }
+}

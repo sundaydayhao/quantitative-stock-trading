@@ -1,0 +1,29 @@
+{
+  "symbol": "SAMPLE",
+  "market_data_csv": "../data/sample_prices.csv",
+  "starting_cash": 100000,
+  "strategy": {
+    "name": "breakout",
+    "target_weight": 0.55,
+    "entry_window": 20,
+    "exit_window": 10
+  },
+  "risk": {
+    "allow_short": false,
+    "max_position_pct": 0.6,
+    "max_order_value": 25000,
+    "min_cash_buffer_pct": 0.08,
+    "max_daily_loss_pct": 0.03,
+    "stop_loss_pct": 0.1,
+    "take_profit_pct": 0.25,
+    "min_order_value": 1000,
+    "lot_size": 100
+  },
+  "execution": {
+    "broker": "paper",
+    "poll_seconds": 60,
+    "commission_bps": 2.5,
+    "slippage_bps": 5,
+    "min_fee": 5
+  }
+}

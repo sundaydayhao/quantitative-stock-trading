@@ -1,0 +1,29 @@
+{
+  "symbol": "SAMPLE",
+  "market_data_csv": "../data/sample_prices.csv",
+  "starting_cash": 100000,
+  "strategy": {
+    "name": "moving_average_cross",
+    "target_weight": 0.6,
+    "short_window": 5,
+    "long_window": 20
+  },
+  "risk": {
+    "allow_short": false,
+    "max_position_pct": 0.65,
+    "max_order_value": 30000,
+    "min_cash_buffer_pct": 0.05,
+    "max_daily_loss_pct": 0.03,
+    "stop_loss_pct": 0.08,
+    "take_profit_pct": 0.22,
+    "min_order_value": 1000,
+    "lot_size": 100
+  },
+  "execution": {
+    "broker": "paper",
+    "poll_seconds": 60,
+    "commission_bps": 2.5,
+    "slippage_bps": 5,
+    "min_fee": 5
+  }
+}
